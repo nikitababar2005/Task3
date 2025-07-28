@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikita Babar Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background-color: darkslategray;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #e6e6e6;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      padding: 1rem 1.5rem;
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: lightblue;
+      color: darkblue;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      background-color: #f9f9f9;
+    }
+
+    .hero img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
+    .hero-text {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: darkblue;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .hero img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nikita Babar</h1>
+    <p>Email: <a href="mailto:nikitababar662@gmail.com" style="color:lightblue;">nikitababar662@gmail.com</a> | Contact: +91 74833 86872</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
+  </nav>
+
+  <section class="hero">
+    <img src="nikita.webp" alt="Nikita Photo">
+    <div class="hero-text">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hello! I am <strong>Nikita Babar</strong>, a passionate web developer with a focus on front-end design and responsive web applications. I'm eager to work on creative, user-friendly experiences. Explore my skills and projects below!</p>
+    </div>
+  </section>
+</body>
+</html>
